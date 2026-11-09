@@ -1,0 +1,5 @@
+mode,hit_at_3,citation_acc,fallback_acc,avg_latency_ms
+dense,0.9167,0.8333,1.0,10.57
+bm25,0.8333,0.5833,1.0,8.11
+hybrid,0.9167,0.8333,1.0,7.62
+hybrid_rerank,1.0,1.0,1.0,19.27

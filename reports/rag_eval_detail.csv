@@ -1,0 +1,61 @@
+mode,question,expected_doc,top1,sources,hit3,top_score,fallback,latency_ms
+dense,Berapa umur minimal untuk mengajukan KTA?,K01,K01,"['K01', 'K01', 'K02']",True,0.8148,False,14.51
+dense,Berapa lama harus bekerja sebelum boleh mengajukan kredit?,K01,K01,"['K01', 'K06', 'K01']",True,0.6599,False,9.28
+dense,Berapa pinjaman maksimal yang bisa diajukan?,K02,K02,"['K02', 'K07', 'K06']",True,0.6825,False,7.49
+dense,Berapa batas cicilan dibanding gaji?,K02,K01,"['K01', 'K03', 'K06']",False,0.5136,False,8.45
+dense,Apakah bunga bisa naik di tengah masa pinjaman?,K03,K02,"['K02', 'K03', 'K06']",True,0.5601,False,8.31
+dense,Apakah karyawan payroll dapat potongan bunga?,K03,K03,"['K03', 'K04', 'K01']",True,0.5415,False,12.22
+dense,Kapan NPWP wajib dilampirkan?,K04,K04,"['K04', 'K08', 'K06']",True,0.4841,False,15.59
+dense,"Saya wiraswasta tanpa slip gaji, dokumen apa penggantinya?",K04,K04,"['K04', 'K04', 'K01']",True,0.5372,False,16.1
+dense,Skor berapa yang langsung ditolak?,K05,K05,"['K05', 'K08', 'K05']",True,0.5636,False,14.65
+dense,Berapa denda kalau telat bayar cicilan?,K06,K06,"['K06', 'K07', 'K03']",True,0.6114,False,12.39
+dense,Berapa penalti kalau melunasi pinjaman lebih cepat?,K07,K07,"['K07', 'K02', 'K06']",True,0.7673,False,8.25
+dense,Berapa lama pengaduan saya akan dijawab?,K08,K08,"['K08', 'K02', 'K01']",True,0.5347,False,8.19
+dense,Siapa pemenang Piala Dunia 2022?,NONE,,[],False,0.1862,True,7.66
+dense,Bagaimana cara membuat nasi goreng?,NONE,,[],False,0.1099,True,7.52
+dense,Berapa harga emas hari ini?,NONE,,[],False,0.2167,True,7.99
+bm25,Berapa umur minimal untuk mengajukan KTA?,K01,K06,"['K06', 'K04', 'K07']",False,0.8148,False,8.04
+bm25,Berapa lama harus bekerja sebelum boleh mengajukan kredit?,K01,K06,"['K06', 'K02', 'K01']",True,0.6599,False,9.2
+bm25,Berapa pinjaman maksimal yang bisa diajukan?,K02,K07,"['K07', 'K02', 'K06']",True,0.6825,False,9.27
+bm25,Berapa batas cicilan dibanding gaji?,K02,K06,"['K06', 'K04', 'K07']",False,0.5136,False,8.93
+bm25,Apakah bunga bisa naik di tengah masa pinjaman?,K03,K03,"['K03', 'K03', 'K03']",True,0.5601,False,8.31
+bm25,Apakah karyawan payroll dapat potongan bunga?,K03,K03,"['K03', 'K03', 'K01']",True,0.5415,False,7.37
+bm25,Kapan NPWP wajib dilampirkan?,K04,K04,"['K04', 'K01', 'K04']",True,0.4841,False,8.02
+bm25,"Saya wiraswasta tanpa slip gaji, dokumen apa penggantinya?",K04,K04,"['K04', 'K04', 'K01']",True,0.5372,False,7.61
+bm25,Skor berapa yang langsung ditolak?,K05,K08,"['K08', 'K05', 'K05']",True,0.5636,False,8.11
+bm25,Berapa denda kalau telat bayar cicilan?,K06,K06,"['K06', 'K06', 'K05']",True,0.6114,False,7.3
+bm25,Berapa penalti kalau melunasi pinjaman lebih cepat?,K07,K07,"['K07', 'K06', 'K02']",True,0.7673,False,7.91
+bm25,Berapa lama pengaduan saya akan dijawab?,K08,K08,"['K08', 'K08', 'K08']",True,0.5347,False,8.82
+bm25,Siapa pemenang Piala Dunia 2022?,NONE,,[],False,0.1862,True,7.6
+bm25,Bagaimana cara membuat nasi goreng?,NONE,,[],False,0.1099,True,7.66
+bm25,Berapa harga emas hari ini?,NONE,,[],False,0.2167,True,7.45
+hybrid,Berapa umur minimal untuk mengajukan KTA?,K01,K07,"['K07', 'K01', 'K01']",True,0.8148,False,8.84
+hybrid,Berapa lama harus bekerja sebelum boleh mengajukan kredit?,K01,K01,"['K01', 'K06', 'K01']",True,0.6599,False,7.53
+hybrid,Berapa pinjaman maksimal yang bisa diajukan?,K02,K02,"['K02', 'K07', 'K06']",True,0.6825,False,7.25
+hybrid,Berapa batas cicilan dibanding gaji?,K02,K06,"['K06', 'K03', 'K04']",False,0.5136,False,7.43
+hybrid,Apakah bunga bisa naik di tengah masa pinjaman?,K03,K03,"['K03', 'K02', 'K03']",True,0.5601,False,7.61
+hybrid,Apakah karyawan payroll dapat potongan bunga?,K03,K03,"['K03', 'K01', 'K06']",True,0.5415,False,7.23
+hybrid,Kapan NPWP wajib dilampirkan?,K04,K04,"['K04', 'K08', 'K04']",True,0.4841,False,7.3
+hybrid,"Saya wiraswasta tanpa slip gaji, dokumen apa penggantinya?",K04,K04,"['K04', 'K04', 'K01']",True,0.5372,False,7.92
+hybrid,Skor berapa yang langsung ditolak?,K05,K05,"['K05', 'K08', 'K05']",True,0.5636,False,8.03
+hybrid,Berapa denda kalau telat bayar cicilan?,K06,K06,"['K06', 'K06', 'K07']",True,0.6114,False,8.61
+hybrid,Berapa penalti kalau melunasi pinjaman lebih cepat?,K07,K07,"['K07', 'K02', 'K06']",True,0.7673,False,7.58
+hybrid,Berapa lama pengaduan saya akan dijawab?,K08,K08,"['K08', 'K08', 'K06']",True,0.5347,False,7.3
+hybrid,Siapa pemenang Piala Dunia 2022?,NONE,,[],False,0.1862,True,7.19
+hybrid,Bagaimana cara membuat nasi goreng?,NONE,,[],False,0.1099,True,7.22
+hybrid,Berapa harga emas hari ini?,NONE,,[],False,0.2167,True,7.27
+hybrid_rerank,Berapa umur minimal untuk mengajukan KTA?,K01,K01,"['K01', 'K01', 'K07']",True,0.8148,False,18.18
+hybrid_rerank,Berapa lama harus bekerja sebelum boleh mengajukan kredit?,K01,K01,"['K01', 'K02', 'K01']",True,0.6599,False,20.38
+hybrid_rerank,Berapa pinjaman maksimal yang bisa diajukan?,K02,K02,"['K02', 'K05', 'K06']",True,0.6825,False,18.26
+hybrid_rerank,Berapa batas cicilan dibanding gaji?,K02,K02,"['K02', 'K07', 'K06']",True,0.5136,False,17.78
+hybrid_rerank,Apakah bunga bisa naik di tengah masa pinjaman?,K03,K03,"['K03', 'K07', 'K02']",True,0.5601,False,19.56
+hybrid_rerank,Apakah karyawan payroll dapat potongan bunga?,K03,K03,"['K03', 'K04', 'K07']",True,0.5415,False,18.85
+hybrid_rerank,Kapan NPWP wajib dilampirkan?,K04,K04,"['K04', 'K08', 'K04']",True,0.4841,False,18.42
+hybrid_rerank,"Saya wiraswasta tanpa slip gaji, dokumen apa penggantinya?",K04,K04,"['K04', 'K04', 'K04']",True,0.5372,False,18.5
+hybrid_rerank,Skor berapa yang langsung ditolak?,K05,K05,"['K05', 'K07', 'K06']",True,0.5636,False,17.99
+hybrid_rerank,Berapa denda kalau telat bayar cicilan?,K06,K06,"['K06', 'K02', 'K07']",True,0.6114,False,18.83
+hybrid_rerank,Berapa penalti kalau melunasi pinjaman lebih cepat?,K07,K07,"['K07', 'K07', 'K07']",True,0.7673,False,19.67
+hybrid_rerank,Berapa lama pengaduan saya akan dijawab?,K08,K08,"['K08', 'K05', 'K07']",True,0.5347,False,19.96
+hybrid_rerank,Siapa pemenang Piala Dunia 2022?,NONE,,[],False,0.1862,True,22.61
+hybrid_rerank,Bagaimana cara membuat nasi goreng?,NONE,,[],False,0.1099,True,21.13
+hybrid_rerank,Berapa harga emas hari ini?,NONE,,[],False,0.2167,True,18.91

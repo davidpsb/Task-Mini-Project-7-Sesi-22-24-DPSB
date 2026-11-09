@@ -1,0 +1,8 @@
+{
+    "retrain": true,
+    "alerts": [
+        "minggu_2: error rate 2.0% > 1.0%",
+        "minggu_2: drift pada age, credit_amount, duration, purpose"
+    ],
+    "next_step": "Retrain model dengan data terbaru"
+}
